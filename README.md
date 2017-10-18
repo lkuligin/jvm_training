@@ -7,12 +7,13 @@ Launching Java Mission Control (the analysis tool):<br>
 ```jmc```<br>
 Heap size:<br>
 ```jinfo -flag MaxHeapSize 62559```<br>
-All jvms running on the machine (with flags, etc.):<br>
-```jps
-jps -v```<br>
+All jvms running on the machine (with flags, etc.):
+```
+jps
+jps -v
+```
 Starting with a flight recorder (you should pay for it if you use it in production and analyze with JMC):<br>
 ```java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder - jar target/...```<br>
 Easy switch between java versions:<br>
 ```jenv versions
-jenv shell 9
-```
+jenv shell 9```
