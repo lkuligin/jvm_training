@@ -11,7 +11,8 @@ jmc
 ```
 Heap size:
 ```
-jinfo -flag MaxHeapSize 62559```
+jinfo -flag MaxHeapSize 62559
+```
 All jvms running on the machine (with flags, etc.):
 ```
 jps
