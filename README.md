@@ -27,3 +27,19 @@ Easy switch between java versions:<br>
 jenv versions
 jenv shell 9
 ```
+Send heap dump to stdout (by the jvm itself):
+```
+kill -3 62559
+```
+Statistics regarding jit(just-in-time) compiler since the application has been launched:
+```
+jstat -compiler 62559
+```
+Getting a thread dump:
+```
+jstack -l 62559 
+```
+Shows the stack trace and locks all threads (even can envoke System.gc()):
+```
+jcmd 62559 Thread.print -l
+```
